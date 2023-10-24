@@ -34,3 +34,7 @@ Button {
   flex-direction: column;
   justify-content: space-between;
 }
+
+.navbar-brand img {
+  width: 100px;
+}

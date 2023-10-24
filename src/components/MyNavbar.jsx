@@ -7,7 +7,7 @@ const MyNavbar = () => {
     return (
 <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        <Navbar.Brand href="#home">Libreria</Navbar.Brand>
+        <Navbar.Brand href="#home"><img src='https://upload.wikimedia.org/wikipedia/commons/e/e2/LA-Logo-libri-wiki.png' alt='logo'></img> Libreria</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
