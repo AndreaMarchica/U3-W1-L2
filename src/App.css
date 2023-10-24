@@ -1,0 +1,36 @@
+footer {
+  margin: 0 auto;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+}
+
+footer img {
+  width: 100px;
+  margin-right: 3em;
+}
+
+#libreria {
+  text-align: center;
+}
+Button {
+  width: 100%;
+}
+
+.customCol {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.card-img-top {
+  height: 50%;
+}
+
+.card-body {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
