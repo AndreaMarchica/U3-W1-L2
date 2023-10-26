@@ -1,83 +1,28 @@
-import { Component } from "react"
-import { Col, Container, Row, Button, Card, } from 'react-bootstrap'
-import fantasy from '../books/fantasy.json'
-import history from '../books/history.json'
-import horror from '../books/horror.json'
-import romance from '../books/romance.json'
-import scifi from '../books/scifi.json'
-
-
-// class SingleBook extends Component  {
-//     state = { book : {
-//         "asin": "",
-//     "title": "",
-//     "img": "",
-//     "price": 0,
-//     "category": "",
-//     }
-//   }
-//     render() {
-//         return() {
-// <Container>
-// <Row>
-// <Col>
-
-// </Col>
-// </Row>
-// </Container>
-
-
-
-
-//         }
-       
-  
-    
-
-
-    
-// }
-// export default SingleBook
-
-
+import { Component } from "react";
+import { Card } from "react-bootstrap";
+import CommentArea from "./CommentArea";
 
 class SingleBook extends Component {
-    state = { book : {
-                "asin": "",
-            "title": "",
-            "img": "",
-            "price": 0,
-            "category": "",
-            },
-            'selected' : false,
-          }
-render(){
-    return(
-        <Container>
-            <Row>
-                {[...fantasy, ...history, ...horror, ...romance, ...scifi].map((book)=>{
-                    return (
-                    <Col>
-                            <Card>
-        <Card.Img variant="top" src={book.img} />
+  state = {
+    selected: false,
+  };
+
+  render() {
+    return (
+      <Card
+        onClick={() => this.setState({ selected: !this.state.selected })}
+        style={{ border: this.state.selected ? "3px solid red" : "none" }}
+      >
+        <Card.Img variant="top" src={this.props.book.img} />
         <Card.Body>
-          <Card.Title>{book.title}</Card.Title>
-          <Card.Text>
-           <p>Asin: {book.asin}</p>
-           <p>Prezzo: {book.price}€</p>
-          </Card.Text>
-          <Button variant="primary">Mostra</Button>
+          <Card.Title style={{ color: "black" }}>
+            {this.props.book.title}
+          </Card.Title>
         </Card.Body>
-      </Card></Col>
-                )}
-                
-                )}
-
-      </Row>
-         </Container>
-
-    )
-}
+        <CommentArea></CommentArea>
+      </Card>
+    );
+  }
 }
 
-export default SingleBook
+export default SingleBook;

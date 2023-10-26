@@ -1,40 +1,42 @@
-footer {
-  margin: 0 auto;
-  background-color: antiquewhite;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3em;
-}
-
-footer img {
-  width: 100px;
-  margin-right: 3em;
-}
-
-#libreria {
+.App {
   text-align: center;
 }
-Button {
-  width: 100%;
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.customCol {
-  display: flex;
-  margin-bottom: 2em;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-.card-img-top {
-  height: 50%;
-}
-
-.card-body {
-  height: 50%;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.navbar-brand img {
-  width: 100px;
+.App-link {
+  color: #61dafb;
+}
+
+.book-cover {
+  height: 100%;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

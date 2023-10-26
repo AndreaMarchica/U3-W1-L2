@@ -1,12 +1,9 @@
-import React from 'react';
+const MyFooter = () => (
+  <footer className="d-flex bg-dark mt-2">
+    <span className="text-white m-auto p-2">
+      <strong>EPICODE</strong> - Copyright {new Date().getFullYear()}
+    </span>
+  </footer>
+)
 
-
-const MyFooter = () => {
-    return(
-       <footer fluid>
-        <div><img src='https://upload.wikimedia.org/wikipedia/commons/e/e2/LA-Logo-libri-wiki.png' alt='logo libreria'></img></div>
-        <div><p>2023 All Rigths Reserved.</p></div>
-       </footer>
-    )
-}
 export default MyFooter

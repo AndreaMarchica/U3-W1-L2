@@ -1,12 +1,9 @@
+import { Alert } from 'react-bootstrap'
 
-
-const Welcome = () => {
-    alert('Benvenuto nella nostra libreria!')
-    return(
-       <div id="libreria">
-    <h1>Libreria</h1>
-    <h3>Ecco la nostra raccolta</h3></div> 
-    )
-}
+const Welcome = () => (
+  <Alert className="text-center">
+    <h1>Benvenuti in EpiBooks!</h1>
+  </Alert>
+)
 
 export default Welcome
